@@ -1,0 +1,53 @@
+@import url("light.css");
+@import url("dark.css");
+
+html, body {
+  padding: 0;
+  margin: 0;
+  background: var(--md-sys-color-surface);
+  color: var(--md-sys-color-on-surface);
+}
+
+header {
+  background: var(--md-sys-color-primary-container);
+  color: var(--md-sys-color-on-primary);
+  padding: 0px 10px 0px 10px;
+  margin: 0;
+}
+
+header h1 {
+  margin-top: 0;
+}
+
+article {
+  padding: 0px 10px 0px 10px;
+  margin-bottom: 2em; /* To have room for the footer when we scroll down fully */
+}
+
+footer {
+  padding: 0px 10px 0px 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2em;
+  align-content: center;
+  background: var(--md-sys-color-tertiary-container);
+  color: var(--md-sys-color-on-tertiary);
+  text-align: center;
+}
+
+a {
+  color: var(--md-sys-color-secondary);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #eee;
+    background: #121212;
+  }
+
+  body a {
+    color: #809fff;
+  }
+}
